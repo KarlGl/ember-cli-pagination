@@ -100,9 +100,9 @@ export default Ember.ArrayProxy.extend(PageMixin, Ember.Evented, ArrayProxyPromi
 
   totalPagesBinding: "meta.total_pages",
 
-  pageChanged: function() {
-    this.set("promise", this.fetchContent());
-  }.observes("page", "perPage"),
+//  pageChanged: function() {
+//    this.set("promise", this.fetchContent());
+//  }.observes("page", "perPage"),
 
   lockToRange: function() {
     LockToRange.watch(this);
